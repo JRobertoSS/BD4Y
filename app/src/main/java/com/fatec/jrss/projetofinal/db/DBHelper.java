@@ -8,7 +8,6 @@ import com.fatec.jrss.projetofinal.db.Colunas.EnumColunas;
 import com.fatec.jrss.projetofinal.db.Tabelas.EnumTabelas;
 
 /**
- * Created by JoséRoberto on 20/11/2015.
  * Classe responsável pela criação do banco e conexão.
  */
 public class DBHelper extends SQLiteOpenHelper {
@@ -36,7 +35,7 @@ public class DBHelper extends SQLiteOpenHelper {
             FK + "(" + EnumColunas.PRESENTE.getNome() + ") references " + EnumTabelas.PRESENTES.getNome() + "(" +
             EnumColunas.ID.getNome() + "))";
 
-    private static DBHelper singleton = null;
+    private static DBHelper singleton = null; // instância única do DBHelper, gerenciada na classe MyApplication
 
     private DBHelper(Context contexto) {
         super(contexto, DB_NAME, null, DB_VERSION);

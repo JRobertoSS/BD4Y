@@ -1,7 +1,6 @@
 package com.fatec.jrss.projetofinal.db.Colunas;
 
 /**
- * Created by JoséRoberto on 24/11/2015.
  * Enumeração dos nomes das colunas de todas as tabelas do banco.
  */
 public enum EnumColunas {

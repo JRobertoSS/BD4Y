@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.fatec.jrss.projetofinal">
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_bolo_notificacao"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".atividades.MenuPrincipal"
+            android:label="@string/menuPrincipal"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|keyboardHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".atividades.AniversariantesMain"
+            android:label="@string/aniversariantes"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|keyboardHidden"/>
+        <activity
+            android:name=".atividades.PresentesMain"
+            android:label="@string/presentes"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|keyboardHidden"/>
+        <activity
+            android:name=".atividades.AniversarianteDetalhes"
+            android:label="@string/detalhesAniv"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|keyboardHidden"/>
+        <activity
+            android:name=".atividades.PresenteDetalhes"
+            android:label="@string/detalhesPres"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|keyboardHidden"/>
+        <activity
+            android:name=".atividades.AniversarianteCadastro"
+            android:label="@string/cadAniv"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|keyboardHidden"/>
+        <activity
+            android:name=".atividades.PresenteCadastro"
+            android:label="@string/cadPres"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|keyboardHidden"/>
+        <activity
+            android:name=".atividades.Configuracoes"
+            android:label="@string/configuracoes"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|keyboardHidden"/>
+        <activity
+            android:name=".atividades.AniversarianteAlteraExclui"
+            android:label="@string/altAniv"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|keyboardHidden"/>
+        <activity
+            android:name=".atividades.Confirmacao"
+            android:label="@string/confirmarAcao"
+            android:theme="@android:style/Theme.Dialog"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|keyboardHidden"/>
+        <activity
+            android:name=".atividades.PresenteAlteraExclui"
+            android:label="@string/altPres"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|keyboardHidden"/>
+        <activity
+            android:name=".atividades.AddPresenteDoAniversariante"
+            android:label="@string/addPres"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|keyboardHidden"/>
+
+        <service
+            android:name=".servicos.ServicoNotificacao"
+            android:exported="false" />
+
+        <activity
+            android:name=".atividades.AniversariantesMes"
+            android:label="@string/aniversariantesMes"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|keyboardHidden"/>
+    </application>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+</manifest>
